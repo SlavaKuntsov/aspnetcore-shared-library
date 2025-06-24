@@ -33,17 +33,13 @@ To add this shared kernel to your solution:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-org/aspnetcore-shared-kernel.git
+   git clone https://github.com/SlavaKuntsov/aspnetcore-shared-kernel.git
    ```
 2. Add a project reference to your ASP.NET Core projects.
 
 ## Contributing
 
 Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new shared components.
-
-## License
-
-[MIT](LICENSE) (or specify your license here)
 
 ---
 
