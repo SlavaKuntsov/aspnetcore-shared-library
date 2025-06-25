@@ -7,11 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
         <PackageReference Include="FluentValidation" Version="11.11.0"/>
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\OnlineStore.Domain\OnlineStore.Domain.csproj" />
+        <ProjectReference Include="..\Common\Common.csproj" />
         <ProjectReference Include="..\Domain\Domain.csproj"/>
     </ItemGroup>
 
