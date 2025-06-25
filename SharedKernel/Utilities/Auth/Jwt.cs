@@ -2,12 +2,11 @@
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using Common.Authorization;
 using Common.Enums;
 using Domain.Enums;
+using Domain.Options;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using OnlineStore.Domain.Entities;
 
 namespace Utilities.Auth;
 
@@ -48,11 +47,11 @@ public class Jwt(IOptions<JwtOptions> jwtOptions) : IJwt
 		return _jwtOptions.RefreshTokenExpirationDays;
 	}
 
-	public Guid ValidateRefreshTokenAsync(RefreshToken? existRefreshToken)
-	{
-		if (existRefreshToken?.UserId == null || existRefreshToken.IsRevoked || existRefreshToken.ExpiresAt < System.DateTime.UtcNow)
-			return Guid.Empty;
-
-		return existRefreshToken.UserId.Value;
-	}
+	// public Guid ValidateRefreshTokenAsync(RefreshToken? existRefreshToken)
+	// {
+	// 	if (existRefreshToken?.UserId == null || existRefreshToken.IsRevoked || existRefreshToken.ExpiresAt < System.DateTime.UtcNow)
+	// 		return Guid.Empty;
+	//
+	// 	return existRefreshToken.UserId.Value;
+	// }
 }
