@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using Domain.Enums;
 using Common.Enums;
+using Domain.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
@@ -15,6 +16,9 @@ public static class AuthorizationExtension
 		this IServiceCollection services,
 		IConfiguration configuration)
 	{
+		services.Configure<JwtOptions>(configuration.GetSection(nameof(JwtOptions)));
+		services.Configure<EmailOptions>(configuration.GetSection(nameof(EmailOptions)));
+		
 		var jwtOptions = configuration.GetSection(nameof(JwtOptions)).Get<JwtOptions>();
 		
 		services
@@ -46,8 +50,6 @@ public static class AuthorizationExtension
 						OnTokenValidated = _ => Task.CompletedTask
 					};
 				});
-		
-		services.Configure<JwtOptions>(configuration.GetSection(nameof(JwtOptions)));
 		
 		services.Configure<AuthorizationOptions>(
 			configuration.GetSection(nameof(AuthorizationOptions)));

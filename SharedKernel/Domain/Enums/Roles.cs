@@ -4,8 +4,10 @@ namespace Domain.Enums;
 
 public enum Role
 {
-	[Description("User")]
-	User = 0,
-	[Description("Admin")]
-	Admin = 1
+	[Description(nameof(Guest))]
+	Guest = 0,
+	[Description(nameof(User))]
+	User = 1,
+	[Description(nameof(Admin))]
+	Admin = 2
 }
