@@ -2,11 +2,11 @@
 
 using Domain.Enums;
 
-using Extensions.Enums;
+using Common.Enums;
 
 using Microsoft.AspNetCore.Authorization;
 
-namespace Extensions.Authorization;
+namespace Common.Authorization;
 
 public class ActiveAdminHandler : AuthorizationHandler<ActiveAdminRequirement>
 {

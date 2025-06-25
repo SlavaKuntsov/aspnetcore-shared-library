@@ -3,7 +3,7 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 using Serilog.Context;
 
-namespace Extensions.Behaviors;
+namespace Common.Behaviors;
 
 internal sealed class RequestLoggingPipelineBehavior<TRequest, TResponse>(ILogger logger)
 	: IPipelineBehavior<TRequest, TResponse>

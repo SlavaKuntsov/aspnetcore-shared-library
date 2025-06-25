@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using Domain.Constants;
 
-namespace Extensions.Strings;
+namespace Common.Strings;
 
 public static class StringExtensions
 {

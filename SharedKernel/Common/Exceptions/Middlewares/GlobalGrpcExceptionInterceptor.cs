@@ -1,7 +1,7 @@
 ﻿using Grpc.Core;
 using Grpc.Core.Interceptors;
 
-namespace Extensions.Exceptions.Middlewares;
+namespace Common.Exceptions.Middlewares;
 
 public class GlobalGrpcExceptionInterceptor : Interceptor
 {

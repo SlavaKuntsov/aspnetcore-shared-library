@@ -1,8 +1,8 @@
-﻿using Extensions.Exceptions.Middlewares;
+﻿using Common.Exceptions.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Extensions.Exceptions;
+namespace Common.Exceptions;
 
 public static class ExceptionsExtension
 {

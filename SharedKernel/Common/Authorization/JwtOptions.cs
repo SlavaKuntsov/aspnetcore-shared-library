@@ -1,4 +1,4 @@
-﻿namespace Extensions.Authorization;
+﻿namespace Common.Authorization;
 
 public class JwtOptions
 {

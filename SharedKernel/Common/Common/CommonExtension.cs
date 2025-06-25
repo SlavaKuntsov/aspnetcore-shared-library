@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Extensions.Common;
+namespace Common.Common;
 
 public static class CommonExtension
 {
