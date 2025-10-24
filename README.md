@@ -1,6 +1,6 @@
-# ASP.NET Core Shared Kernel
+# ASP.NET Core Shared Library
 
-This repository provides a **shared kernel** for ASP.NET Core projects. It contains common dependencies, utilities, and abstractions that are frequently used across multiple solutions. By centralizing these components, you can avoid code duplication and streamline development in your .NET ecosystem.
+This repository provides a **shared library** for ASP.NET Core projects. It contains common dependencies, utilities, and abstractions that are frequently used across multiple solutions. By centralizing these components, you can avoid code duplication and streamline development in your .NET ecosystem.
 
 ## Purpose
 
@@ -25,15 +25,15 @@ The project is organized into several folders, including:
 
 1. **Reference this project** in your ASP.NET Core solutions as a shared dependency.
 2. **Use the provided abstractions and utilities** to implement common functionality without duplicating code.
-3. **Contribute improvements** to the shared kernel as your projects evolve.
+3. **Contribute improvements** to the shared library as your projects evolve.
 
 ## Getting Started
 
-To add this shared kernel to your solution:
+To add this shared library to your solution:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/SlavaKuntsov/aspnetcore-shared-kernel.git
+   git clone https://github.com/SlavaKuntsov/aspnetcore-shared-library.git
    ```
 2. Add a project reference to your ASP.NET Core projects.
 
